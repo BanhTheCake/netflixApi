@@ -4,6 +4,7 @@ import * as dotenv from 'dotenv';
 import { Users } from 'src/Model/Entities/user.entity';
 import { Favorites } from 'src/Model/Entities/favorite.entity';
 import { Reviews } from 'src/Model/Entities/review.entity';
+import mysql2 from 'mysql2';
 dotenv.config();
 
 export const databaseProviders = [
@@ -19,9 +20,10 @@ export const databaseProviders = [
         database: process.env.DATABASE_NAME,
         dialectOptions: {
           ssl: {
-              rejectUnauthorized: true,        
-          }
-      }
+            rejectUnauthorized: true,
+          },
+        },
+        dialectModule: mysql2,
       });
       sequelize.addModels([Users, Favorites, Reviews]);
       await sequelize.sync();

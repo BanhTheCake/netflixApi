@@ -6,6 +6,7 @@ const dotenv = require("dotenv");
 const user_entity_1 = require("../Model/Entities/user.entity");
 const favorite_entity_1 = require("../Model/Entities/favorite.entity");
 const review_entity_1 = require("../Model/Entities/review.entity");
+const mysql2_1 = require("mysql2");
 dotenv.config();
 exports.databaseProviders = [
     {
@@ -21,8 +22,9 @@ exports.databaseProviders = [
                 dialectOptions: {
                     ssl: {
                         rejectUnauthorized: true,
-                    }
-                }
+                    },
+                },
+                dialectModule: mysql2_1.default,
             });
             sequelize.addModels([user_entity_1.Users, favorite_entity_1.Favorites, review_entity_1.Reviews]);
             await sequelize.sync();
