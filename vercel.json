@@ -1,16 +1,19 @@
 {
     "version": 2,
+    "name": "next-store-server",
+    "buildCommand": "npm start",
+    "installCommand": "npm install",
     "builds": [
         {
-            "src": "src/main.ts",
+            "src": "dist/main.js",
             "use": "@vercel/node"
         }
     ],
     "routes": [
         {
             "src": "/(.*)",
-            "dest": "src/main.ts",
-            "methods": ["GET", "POST", "PUT", "PATCH", "DELETE"]
+            "dest": "dist/main.js",
+            "methods": ["GET", "POST", "PATCH", "PUT", "DELETE", "OPTIONS"]
         }
     ]
 }
