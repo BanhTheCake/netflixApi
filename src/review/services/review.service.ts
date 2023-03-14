@@ -33,7 +33,7 @@ export class ReviewService {
       const offset = (page - 1) * limit;
 
       const sqlQuery = `
-      SELECT reviews.*, JSON_OBJECT('userId', users.userId, 'id', users.id, 'displayName', users.displayName, 'createdAt', users.createdAt, 'updatedAt', users.updatedAt) AS users
+      SELECT reviews.*, JSON_OBJECT('userId', users.userId, 'id', users.id, 'displayName', users.displayName, 'createdAt', users.createdAt, 'updatedAt', users.updatedAt) AS user
       FROM reviews
       INNER JOIN users ON reviews.userId = users.userId
       WHERE reviews.mediaType = '${mediaType}' AND reviews.mediaId = '${mediaId}'
