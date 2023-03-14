@@ -2,7 +2,7 @@
     "version": 2,
     "name": "next-store-server",
     "buildCommand": "npm start",
-    "installCommand": "npm install",
+    "installCommand": "npm install && npm install mysql2 --save",
     "builds": [
         {
             "src": "dist/main.js",
