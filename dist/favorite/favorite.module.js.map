@@ -1,0 +1,1 @@
+{"version":3,"file":"favorite.module.js","sourceRoot":"","sources":["../../src/favorite/favorite.module.ts"],"names":[],"mappings":";;;;;;;;;AAAA,2EAAuE;AACvE,2CAAwC;AACxC,kEAA8D;AAOvD,IAAM,cAAc,GAApB,MAAM,cAAc;CAAG,CAAA;AAAjB,cAAc;IAL1B,IAAA,eAAM,EAAC;QACN,OAAO,EAAE,EAAE;QACX,WAAW,EAAE,CAAC,wCAAkB,CAAC;QACjC,SAAS,EAAE,CAAC,kCAAe,CAAC;KAC7B,CAAC;GACW,cAAc,CAAG;AAAjB,wCAAc"}
