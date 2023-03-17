@@ -6,7 +6,7 @@ exports.cookieConfig = {
     secure: true,
     sameSite: 'none',
     maxAge: 1000 * 60 * 60 * 24,
-    domain: '.vercel.app',
+    domain: 'https://banhthenetflix.vercel.app',
     path: '/',
 };
 //# sourceMappingURL=cookie.config.js.map

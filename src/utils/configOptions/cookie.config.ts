@@ -5,6 +5,6 @@ export const cookieConfig: CookieOptions = {
   secure: true,
   sameSite: 'none',
   maxAge: 1000 * 60 * 60 * 24, // 1 days
-  domain: '.vercel.app',
+  domain: 'https://banhthenetflix.vercel.app',
   path: '/',
 };
