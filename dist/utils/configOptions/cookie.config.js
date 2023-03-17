@@ -7,5 +7,6 @@ exports.cookieConfig = {
     sameSite: 'none',
     maxAge: 1000 * 60 * 60 * 24,
     domain: '.vercel.app',
+    path: '/',
 };
 //# sourceMappingURL=cookie.config.js.map

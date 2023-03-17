@@ -6,4 +6,5 @@ export const cookieConfig: CookieOptions = {
   sameSite: 'none',
   maxAge: 1000 * 60 * 60 * 24, // 1 days
   domain: '.vercel.app',
+  path: '/',
 };
