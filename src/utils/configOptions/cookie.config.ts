@@ -5,6 +5,5 @@ export const cookieConfig: CookieOptions = {
   secure: true,
   sameSite: 'none',
   maxAge: 1000 * 60 * 60 * 24, // 1 days
-  domain: 'netflix-api-kappa.vercel.app',
   path: '/',
 };
